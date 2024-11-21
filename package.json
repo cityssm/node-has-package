@@ -2,7 +2,7 @@
   "name": "@cityssm/has-package",
   "type": "module",
   "version": "0.1.1",
-  "description": "Tests if a package is available to be imported. Useful for checking optional dependencies.",
+  "description": "Tests if a package is available to be imported. Useful for checking if optional dependencies are installed.",
   "exports": "./index.js",
   "scripts": {
     "test": "node --test",

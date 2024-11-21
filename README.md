@@ -5,7 +5,7 @@
 [![DeepSource](https://app.deepsource.com/gh/cityssm/node-has-package.svg/?label=active+issues&show_trend=true&token=DR3479iXPgrcY5n3e5515lA-)](https://app.deepsource.com/gh/cityssm/node-has-package/)
 [![codecov](https://codecov.io/gh/cityssm/node-has-package/graph/badge.svg?token=YG1D26SPQF)](https://codecov.io/gh/cityssm/node-has-package)
 
-**Tests if a package is available to be imported. Useful for checking optional dependencies.**
+**Tests if a package is available to be imported. Useful for checking if optional dependencies are installed.**
 
 Unlike other packages that test whether a package is available by importing it,
 this package **checks the file system** for the corresponding `package.json` file.
