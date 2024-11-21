@@ -1,7 +1,7 @@
 {
   "name": "@cityssm/has-package",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tests if a package is available to be imported. Useful for checking optional dependencies.",
   "exports": "./index.js",
   "scripts": {
