@@ -1,0 +1,33 @@
+{
+  "name": "@cityssm/has-package",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Tests if a package is available to be imported. Useful for checking optional dependencies.",
+  "exports": "./index.js",
+  "scripts": {
+    "test": "node --test",
+    "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/node-has-package.git"
+  },
+  "keywords": [
+    "dependency",
+    "dependencies",
+    "optional",
+    "import",
+    "require"
+  ],
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/node-has-package/issues"
+  },
+  "homepage": "https://github.com/cityssm/node-has-package#readme",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "eslint-config-cityssm": "^15.2.0",
+    "prettier-config-cityssm": "^1.0.0"
+  }
+}
