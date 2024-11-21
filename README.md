@@ -1,5 +1,6 @@
 # Has Package
 
+[![NPM Version](https://img.shields.io/npm/v/%40cityssm%2Fhas-package)](https://www.npmjs.com/package/@cityssm/has-package)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d5e8bd61c386abe06f27/maintainability)](https://codeclimate.com/github/cityssm/node-has-package/maintainability)
 [![DeepSource](https://app.deepsource.com/gh/cityssm/node-has-package.svg/?label=active+issues&show_trend=true&token=DR3479iXPgrcY5n3e5515lA-)](https://app.deepsource.com/gh/cityssm/node-has-package/)
 [![codecov](https://codecov.io/gh/cityssm/node-has-package/graph/badge.svg?token=YG1D26SPQF)](https://codecov.io/gh/cityssm/node-has-package)
