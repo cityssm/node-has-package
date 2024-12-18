@@ -40,4 +40,17 @@ await describe('has-package', async () => {
             }
         }
     });
+    await it('Throws error for path within scoped package', async () => {
+        let shouldFail = false;
+        try {
+            await hasPackage('@babel/code/lib/index');
+            shouldFail = true;
+            assert.fail('Should have thrown error.');
+        }
+        catch (error) {
+            if (shouldFail) {
+                assert.fail(error);
+            }
+        }
+    });
 });
