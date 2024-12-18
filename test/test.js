@@ -14,4 +14,30 @@ await describe('has-package', async () => {
         const exists = await hasPackage('@cityssm/unavailable-package');
         assert.strictEqual(exists, false);
     });
+    await it('Throws error for `node:fs` package', async () => {
+        let shouldFail = false;
+        try {
+            await hasPackage('node:fs');
+            shouldFail = true;
+            assert.fail('Should have thrown error.');
+        }
+        catch (error) {
+            if (shouldFail) {
+                assert.fail(error);
+            }
+        }
+    });
+    await it('Throws error for path within package', async () => {
+        let shouldFail = false;
+        try {
+            await hasPackage('eslint/lib/eslint/eslint');
+            shouldFail = true;
+            assert.fail('Should have thrown error.');
+        }
+        catch (error) {
+            if (shouldFail) {
+                assert.fail(error);
+            }
+        }
+    });
 });
