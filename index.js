@@ -5,10 +5,6 @@ function testIfPackageNameIsValid(packageName) {
     if (packageName.includes(':')) {
         return 'Package name should not include ":" character.';
     }
-    // path to file
-    if (packageName.includes('.')) {
-        return 'Package name should not include "." character.';
-    }
     const slashCount = (packageName.match(/\//g) ?? []).length;
     // Path within scoped package
     if (packageName.startsWith('@') && slashCount !== 1) {
