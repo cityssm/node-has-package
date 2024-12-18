@@ -24,7 +24,7 @@ await describe('has-package', async () => {
     try {
       await hasPackage('node:fs')
       shouldFail = true
-      assert.fail('Should have thrown error.')
+      assert.fail()
     } catch (error) {
       if (shouldFail) {
         assert.fail(error)
@@ -37,7 +37,7 @@ await describe('has-package', async () => {
     try {
       await hasPackage('eslint/lib/eslint/eslint')
       shouldFail = true
-      assert.fail('Should have thrown error.')
+      assert.fail()
     } catch (error) {
       if (shouldFail) {
         assert.fail(error)
@@ -50,7 +50,7 @@ await describe('has-package', async () => {
     try {
       await hasPackage('@babel/code/lib/index')
       shouldFail = true
-      assert.fail('Should have thrown error.')
+      assert.fail()
     } catch (error) {
       if (shouldFail) {
         assert.fail(error)
