@@ -1,5 +1,5 @@
 /**
- * Tests whether or not a package is installed and available to be imported.
+ * Tests whether a package is installed and available to be imported.
  * @param packageName - The name of the package to check.
  * @returns `true` if the package is found.
  */
