@@ -2,8 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 
 function testIfPackageNameIsValid(packageName: string): string {
-
-  // node:fs
+  // Ex. node:fs
   if (packageName.includes(':')) {
     return 'Package name should not include ":" character.'
   }
@@ -20,7 +19,7 @@ function testIfPackageNameIsValid(packageName: string): string {
     return 'Package names should not include "/".'
   }
 
-  return ""
+  return ''
 }
 
 /**
@@ -31,7 +30,6 @@ function testIfPackageNameIsValid(packageName: string): string {
 export default async function hasPackage(
   packageName: string
 ): Promise<boolean> {
-
   const validPackageNameError = testIfPackageNameIsValid(packageName)
   if (validPackageNameError !== '') {
     throw new Error(validPackageNameError)

@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 function testIfPackageNameIsValid(packageName) {
-    // node:fs
+    // Ex. node:fs
     if (packageName.includes(':')) {
         return 'Package name should not include ":" character.';
     }
@@ -14,7 +14,7 @@ function testIfPackageNameIsValid(packageName) {
     if (!packageName.startsWith('@') && slashCount > 0) {
         return 'Package names should not include "/".';
     }
-    return "";
+    return '';
 }
 /**
  * Tests whether a package is installed and available to be imported.
