@@ -27,7 +27,7 @@
   "homepage": "https://github.com/cityssm/node-has-package#readme",
   "devDependencies": {
     "@types/node": "^22.10.2",
-    "eslint-config-cityssm": "^18.1.0",
+    "eslint-config-cityssm": "^19.0.0",
     "prettier-config-cityssm": "^1.0.0"
   }
 }
