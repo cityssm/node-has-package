@@ -1,6 +1,6 @@
 {
   "name": "@cityssm/has-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tests if a package is available to be imported. Useful for checking if optional dependencies are installed.",
   "keywords": [
     "dependency",
